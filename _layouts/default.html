@@ -1,0 +1,142 @@
+{% if jekyll.environment == "production" %}
+   <!-- conditional environment based code goes here -->
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>&#9973; SV Liberty Tree &#9973; {{ page.title }}</title>
+      {% feed_meta %}
+      {% seo %}
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <meta content="" name="description" />
+      <meta content="" name="keywords" />
+      <meta content="" name="author" />
+
+      <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- CSS Files
+      ================================================== -->
+      <link href="assets/css/bootstrap.min.css | relative_url" rel="stylesheet" type="text/css" />
+      <link href="assets/css/bootstrap-grid.min.css | relative_url" rel="stylesheet" type="text/css" />
+      <link href="assets/css/bootstrap-reboot.min.css | relative_url" rel="stylesheet" type="text/css" />
+      <link href="assets/css/animate.css | relative_url" rel="stylesheet" type="text/css" />
+      <link href="assets/css/owl.carousel.css | relative_url" rel="stylesheet" type="text/css" />
+      <link href="assets/css/owl.theme.css | relative_url" rel="stylesheet" type="text/css" />
+      <link href="assets/css/owl.transitions.css | relative_url" rel="stylesheet" type="text/css" />
+      <link href="assets/css/magnific-popup.css | relative_url" rel="stylesheet" type="text/css" />
+      <link href="assets/css/jquery.countdown.css | relative_url" rel="stylesheet" type="text/css" />
+      <link href="assets/css/style.css | relative_url" rel="stylesheet" type="text/css" />
+
+      <!-- color scheme -->
+      <link id="colors" href="assets/css/colors/scheme-01.css | relative_url" rel="stylesheet" type="text/css" />
+      <link href="assets/css/coloring.css | relative_url" rel="stylesheet" type="text/css" />
+   </head>
+
+   <body>
+      <div id="wrapper">
+         <div class="page-overlay">
+            <div class="preloader-wrap">
+               <div class="spinner">
+                     <div class="bounce1"></div>
+                     <div class="bounce2"></div>
+                     <div class="bounce3"></div>
+               </div>
+            </div>
+         </div>
+
+         <!-- header begin -->
+         <header class="header-light transparent scroll-light">
+            <div class="container">
+               <div class="row">
+                     <div class="col-md-12">
+                        <div class="d-flex justify-content-between">
+                           <div class="align-self-center header-col-left">
+                                 <!-- logo begin -->
+                                 <div id="logo">
+                                       <a href="index.html">
+                                          Jessy Jane
+                                       </a>
+                                 </div>
+                                 <!-- logo close -->
+                           </div>
+                           {% include navigation.html %}
+                           <div class="align-self-center ml-auto header-col-right">
+                                 <div class="social-icons">
+                                       <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                       <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                       <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                                       <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+                                 </div>
+
+                                 <span id="menu-btn"></span>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </header>
+         <!-- header close -->
+         
+         <!-- content begin -->
+         {{ content }}
+         <!-- content close -->
+
+         <!-- footer begin -->
+         <footer class="footer">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-md-6 sm-text-center mb-sm-30">
+                        &copy; Copyright {{ 'now' | date: "%Y" }} - {{ site.title }}
+                  </div>
+
+                  <div class="col-md-6 text-md-right text-sm-left">
+                        <div class="social-icons">
+                           <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                           <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                           <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                           <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                           <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!-- footer close -->
+
+         <a href="#" id="back-to-top"></a>
+
+         <div id="preloader">
+            <div class="spinner">
+               <div class="bounce1"></div>
+               <div class="bounce2"></div>
+               <div class="bounce3"></div>
+            </div>
+         </div>
+      </div>
+		
+		
+
+      <!-- Javascript Files
+      ================================================== -->
+      <script src="assets/scripts/jquery.min.js"></script>
+      <script src="assets/scripts/bootstrap.min.js"></script>
+      <script src="assets/scripts/wow.min.js"></script>
+      <script src="assets/scripts/jquery.isotope.min.js"></script>
+      <script src="assets/scripts/easing.js"></script>
+      <script src="assets/scripts/owl.carousel.min.js"></script>
+      <script src="assets/scripts/validation.js"></script>
+      <script src="assets/scripts/jquery.magnific-popup.min.js"></script>
+      <script src="assets/scripts/enquire.min.js"></script>
+      <script src="assets/scripts/jquery.stellar.min.js"></script>
+      <script src="assets/scripts/jquery.plugin.js"></script>
+      <script src="assets/scripts/typed.js"></script>
+      <script src="assets/scripts/jquery.countTo.js"></script>
+      <script src="assets/scripts/jquery.countdown.js"></script>
+      <script src="assets/scripts/designesia.js"></script>
+   </body>
+</html>
