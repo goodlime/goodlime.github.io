@@ -1,0 +1,23 @@
+---
+title: Ship Tracker
+layout: default
+---
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script type="module" src="/assets/scripts/svlt-map.js"></script>
+
+<div class="" id="content">
+   <div id="top"></div>
+
+   <div class="container flex-fill vh-100">
+      <!-- <div class="row">
+            <div class="col"> -->
+               <div id="map"></div>
+            <!-- </div>
+      </div> -->
+   </div>
+
+</div>
+
+<script async
+   src="https://maps.googleapis.com/maps/api/js?key={{ site.env.GOOGLE_MAPS_API_KEY }}&callback=initMap"
+></script>
