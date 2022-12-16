@@ -6,34 +6,34 @@
 <html lang="en">
    <head>
       <meta charset="utf-8" />
-      <title>&#9973; SV Liberty Tree &#9973; {{ page.title }}</title>
+      <!-- <title>&#9973; SV Liberty Tree &#9973; {{ page.title }}</title> -->
       {% feed_meta %}
       {% seo %}
       <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      <meta content="" name="description" />
       <meta content="" name="keywords" />
       <meta content="" name="author" />
 
       <!--[if lt IE 9]>
-         <script src="js/html5shiv.js"></script>
+         <script src="js/html5shiv.js' | relative_url }}"></script>
       <![endif]-->
 
       <!-- CSS Files
       ================================================== -->
-      <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-      <link href="assets/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
-      <link href="assets/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
-      <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
-      <link href="assets/css/owl.carousel.css" rel="stylesheet" type="text/css" />
-      <link href="assets/css/owl.theme.css" rel="stylesheet" type="text/css" />
-      <link href="assets/css/owl.transitions.css" rel="stylesheet" type="text/css" />
-      <link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css" />
-      <link href="assets/css/jquery.countdown.css" rel="stylesheet" type="text/css" />
-      <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/bootstrap.min.css' | relative_url }}" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/bootstrap-grid.min.css' | relative_url }}" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/bootstrap-reboot.min.css' | relative_url }}" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/animate.css' | relative_url }}" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/owl.carousel.css' | relative_url }}" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/owl.theme.css' | relative_url }}" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/owl.transitions.css' | relative_url }}" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/magnific-popup.css' | relative_url }}" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/jquery.countdown.css' | relative_url }}" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/style.css' | relative_url }}" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/styles.css' | relative_url }}" rel="stylesheet" type="text/css" />
 
       <!-- color scheme -->
-      <link id="colors" href="assets/css/colors/scheme-01.css" rel="stylesheet" type="text/css" />
-      <link href="assets/css/coloring.css" rel="stylesheet" type="text/css" />
+      <link id="colors" href="{{ 'assets/css/colors/scheme-01.css' | relative_url }}" rel="stylesheet" type="text/css" />
+      <link href="{{ 'assets/css/coloring.css' | relative_url }}" rel="stylesheet" type="text/css" />
    </head>
 
    <body>
@@ -56,9 +56,9 @@
                         <div class="d-flex justify-content-between">
                            <div class="align-self-center header-col-left">
                                  <!-- logo begin -->
-                                 <div id="logo">
+                                 <div id="logo" class="p-2">
                                        <a href="index.html">
-                                          <img src="assets/images/logo.png">
+                                          <img src="{{ 'assets/images/main/Liberty-Tree-Logo-01.svg' | absolute_url }}">
                                        </a>
                                  </div>
                                  <!-- logo close -->
@@ -123,20 +123,20 @@
 
       <!-- Javascript Files
       ================================================== -->
-      <script src="assets/scripts/jquery.min.js"></script>
-      <script src="assets/scripts/bootstrap.min.js"></script>
-      <script src="assets/scripts/wow.min.js"></script>
-      <script src="assets/scripts/jquery.isotope.min.js"></script>
-      <script src="assets/scripts/easing.js"></script>
-      <script src="assets/scripts/owl.carousel.min.js"></script>
-      <script src="assets/scripts/validation.js"></script>
-      <script src="assets/scripts/jquery.magnific-popup.min.js"></script>
-      <script src="assets/scripts/enquire.min.js"></script>
-      <script src="assets/scripts/jquery.stellar.min.js"></script>
-      <script src="assets/scripts/jquery.plugin.js"></script>
-      <script src="assets/scripts/typed.js"></script>
-      <script src="assets/scripts/jquery.countTo.js"></script>
-      <script src="assets/scripts/jquery.countdown.js"></script>
-      <script src="assets/scripts/designesia.js"></script>
+      <script src="{{ 'assets/scripts/jquery.min.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/bootstrap.min.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/wow.min.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/jquery.isotope.min.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/easing.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/owl.carousel.min.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/validation.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/jquery.magnific-popup.min.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/enquire.min.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/jquery.stellar.min.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/jquery.plugin.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/typed.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/jquery.countTo.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/jquery.countdown.js' | relative_url }}"></script>
+      <script src="{{ 'assets/scripts/designesia.js' | relative_url }}"></script>
    </body>
 </html>
