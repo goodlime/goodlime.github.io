@@ -1,30 +1,10 @@
-<!-- <nav> -->
-   <!-- {% for item in site.data.navigation %} -->
-     <!-- <a href="{{ item.link }}" {% if page.url | relative_url == item.link %}class="current"{% endif %}>{{ item.name }}</a> -->
-   <!-- {% endfor %} -->
- <!-- </nav> -->
-
-
-
- <div class="align-self-center ml-auto header-col-mid">
-  <!-- mainmenu begin -->
+<div class="align-self-center ml-auto header-col-mid">
+  <!-- main nav begin -->
   <ul id="mainmenu" class="scrollnav">
-        <li><a href="/index.html">Home</a></li>
-        <li></li>
-        <!-- <li><a href="{{ "index.html#about" | absolute_url }}">About</a></li>
-        <li></li>
-        <li><a href="/index.html#section-services">Services</a></li>
-        <li></li>
-        <li><a href="/index.html#section-portfolio">Portfolio</a></li>
-        <li></li>
-        <li><a href="/index.html#section-blog">Blog</a></li>
-        <li></li> -->
-        <li><a href="/technical/charts.html">Charts</a></li>
-        <li></li>
-        <li><a href="/track.html">Tracker</a></li>
-        <li></li>
-        <!-- <li><a href="/index.html#section-contact">Contact</a></li>
-        <li></li> -->
+    {% for item in site.data.navigation %}
+      <li><a href="{{ item.link }}"{% if page.url | relative_url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+      <a href="" ></a>
+    {% endfor %}
   </ul>
-  <!-- mainmenu close -->
+  <!-- main nav close -->
 </div>

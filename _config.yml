@@ -45,10 +45,11 @@ social:
 #theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-environment-variables
 
 collections:
   authors:
+    output: true
+  destinations:
     output: true
 
 defaults:
@@ -57,6 +58,11 @@ defaults:
       type: "authors"
     values:
       layout: "author"
+  - scope:
+      path: ""
+      type: "destinations"
+    values:
+      layout: "destination"
   - scope:
       path: ""
       type: "posts"
