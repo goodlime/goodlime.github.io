@@ -18,16 +18,28 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: SV Liberty Tree
+title: S/V Liberty Tree
 email: yacht@svlibertytree.com
+author: S/V Liberty Tree
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://svlibertytree.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://svlibertytree.com" # the base hostname & protocol for your site, e.g. http://example.com
+facebook_username: svlibertytree
+instagram_username: svlibertytree
 twitter_username: svlibertytree
 github_username:  goodlime
+google_maps_api_key: AIzaSyCYcnzD1nfoJMwH8PGT4Vx23xM-ZCQvkqo
+
+social:
+  links:
+    - https://twitter.com/svlibertytree
+    - https://www.facebook.com/svlibertytree
+    - https://www.instagram.com/svlibertytree
+
+
 
 # Build settings
 #theme: minima
@@ -37,6 +49,8 @@ plugins:
 collections:
   authors:
     output: true
+  destinations:
+    output: true
 
 defaults:
   - scope:
@@ -44,6 +58,11 @@ defaults:
       type: "authors"
     values:
       layout: "author"
+  - scope:
+      path: ""
+      type: "destinations"
+    values:
+      layout: "destination"
   - scope:
       path: ""
       type: "posts"

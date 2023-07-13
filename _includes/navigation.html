@@ -1,26 +1,10 @@
-<!-- <nav> -->
-   <!-- {% for item in site.data.navigation %} -->
-     <!-- <a href="{{ item.link }}" {% if page.url | relative_url == item.link %}class="current"{% endif %}>{{ item.name }}</a> -->
-   <!-- {% endfor %} -->
- <!-- </nav> -->
-
-
-
- <div class="align-self-center ml-auto header-col-mid">
-  <!-- mainmenu begin -->
+<div class="align-self-center ml-auto header-col-mid">
+  <!-- main nav begin -->
   <ul id="mainmenu" class="scrollnav">
-        <li><a href="#section-hero" class="active">Home</a></li>
-        <li></li>
-        <li><a href="#section-about">About</a></li>
-        <li></li>
-        <li><a href="#section-services">Services</a></li>
-        <li></li>
-        <li><a href="#section-portfolio">Portfolio</a></li>
-        <li></li>
-        <li><a href="#section-blog">Blog</a></li>
-        <li></li>
-        <li><a href="#section-contact">Contact</a></li>
-        <li></li>
+    {% for item in site.data.navigation %}
+      <li><a href="{{ item.link }}"{% if page.url | relative_url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+      <a href="" ></a>
+    {% endfor %}
   </ul>
-  <!-- mainmenu close -->
+  <!-- main nav close -->
 </div>

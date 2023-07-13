@@ -1,3 +1,17 @@
 .current {
-   color: green;
- }
+  color: green;
+}
+
+header {
+  height: fit-content;
+}
+
+#logo {
+  img {
+    height: 70px;
+  }
+}
+
+#map {
+  height: 100%;
+}

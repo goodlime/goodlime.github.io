@@ -1,0 +1,15 @@
+---
+layout: default
+title: Destinations
+---
+<h1>Destination List</h1>
+
+<ul>
+  {% for destination in site.destinations %}
+    <li>
+      <h2><a href="{{ destination.url }}">{{ destination.name }}</a></h2>
+      <h3>{{ destination.position }}</h3>
+      <p>{{ destination.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
