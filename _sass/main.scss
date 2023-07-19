@@ -15,3 +15,7 @@ header {
 #map {
   height: 100%;
 }
+
+#top + section { 
+  padding-top: 130px;
+}
